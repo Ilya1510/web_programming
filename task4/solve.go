@@ -1,7 +1,6 @@
 package main
 
 import (
-  "fmt"
   "strings"
   "unicode"
 )
@@ -37,6 +36,7 @@ func DifferentWordsCount(s string) int {
   }
   return len(res)
 }
+
 /*
 func main() {
   arr := []int{0, 3, 2, 5, 7, 8, 8, 9}
