@@ -34,6 +34,9 @@ func DifferentWordsCount(s string) int {
       word = ""
     }
   }
+  if len(word) != 0 {
+  res[word] = 1
+}
   return len(res)
 }
 
@@ -45,5 +48,6 @@ func main() {
   fmt.Println(gen(), " ", gen(), " ", gen())
   fmt.Println(DifferentWordsCount("Hello, world!HELLO  wOrlD...12"))
   fmt.Println(DifferentWordsCount("8908 Babla ilya aka AKA,,,!! kaK::: Kak ;;; 3333podnyat babla"))
+  fmt.Println(DifferentWordsCount("1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 3 3 akakakakakak"))
 }
 */
